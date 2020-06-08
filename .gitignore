@@ -1,6 +1,3 @@
 node_modules
 .DS_Store
-*.log
-.firebase
-firebase.config.js
 mongodb
