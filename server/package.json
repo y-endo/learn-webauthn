@@ -1,0 +1,24 @@
+{
+  "name": "learn-webauthn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "babel src/index.js --out-dir dist --watch & node ./dist/index.js"
+  },
+  "repository": "https://github.com/y-endo/learn-webauthn.git",
+  "author": "Yuki Endo",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/node": "^7.10.1",
+    "@babel/preset-env": "^7.10.2"
+  },
+  "dependencies": {
+    "base64url": "^3.0.1",
+    "body-parser": "^1.19.0",
+    "core-js": "^3.6.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.18",
+    "node-uuid": "^1.4.8"
+  }
+}
