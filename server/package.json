@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "babel src/index.js --out-dir dist --watch & node ./dist/index.js"
+    "serve": "nodemon ./dist/index.js",
+    "dev": "babel ./src --out-dir ./dist --watch & npm run serve",
+    "build": "babel ./src --out-dir ./dist"
   },
   "repository": "https://github.com/y-endo/learn-webauthn.git",
   "author": "Yuki Endo",
@@ -18,7 +20,9 @@
     "body-parser": "^1.19.0",
     "core-js": "^3.6.5",
     "express": "^4.17.1",
+    "mongodb": "^3.5.8",
     "mongoose": "^5.9.18",
-    "node-uuid": "^1.4.8"
+    "node-uuid": "^1.4.8",
+    "nodemon": "^2.0.4"
   }
 }

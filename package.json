@@ -25,6 +25,7 @@
   "dependencies": {
     "base64url": "^3.0.1",
     "core-js": "^3.6.5",
+    "es6-promise": "^4.2.8",
     "whatwg-fetch": "^3.0.0"
   }
 }
