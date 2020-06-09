@@ -44,9 +44,15 @@ async function createCredential(json) {
       id: base64url.toBuffer(json.user.id).buffer
     },
     pubKeyCredParams: [
+      // こっちはセキュリティキーを使った認証
       {
         type: 'public-key',
         alg: -7
+      },
+      // internal(built-in)認証の場合以下の指定が必要っぽい？
+      {
+        type: 'public-key',
+        alg: -257
       }
     ]
   };
